@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && npm run start",
-    "server": "babel-node --presets es2015 server/startup/index.js",
+    "server": "NODE_ENV=development babel-node --presets es2015 startup/index.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "dependencies": {
